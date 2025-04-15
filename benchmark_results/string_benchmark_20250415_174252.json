@@ -1,0 +1,66 @@
+{
+    "timestamp": "2025-04-15 17:42:20",
+    "test_cases": [
+        {
+            "name": "Count the words in this text: Hello world, this is a test message.",
+            "success_rate": 100.0,
+            "max_time": 1.0365324020385742,
+            "min_time": 0.759758472442627,
+            "avg_time": 0.8879177570343018,
+            "median_time": 0.8472950458526611,
+            "std_dev": 0.10972791062618047
+        },
+        {
+            "name": "Find all occurrences of 'the' in this text: The quick brown fox jumps over the lazy dog.",
+            "success_rate": 100.0,
+            "max_time": 1.0544404983520508,
+            "min_time": 0.8150968551635742,
+            "avg_time": 0.9558187961578369,
+            "median_time": 0.9992873668670654,
+            "std_dev": 0.09412800721186092
+        },
+        {
+            "name": "Extract email addresses from this text: Contact us at test@example.com or support@company.com",
+            "success_rate": 100.0,
+            "max_time": 0.9736692905426025,
+            "min_time": 0.772454023361206,
+            "avg_time": 0.8539515972137451,
+            "median_time": 0.8328738212585449,
+            "std_dev": 0.07405110724044986
+        },
+        {
+            "name": "Calculate word frequency in this text: The cat and the dog and the cat and the mouse",
+            "success_rate": 100.0,
+            "max_time": 1.5261120796203613,
+            "min_time": 1.197547197341919,
+            "avg_time": 1.3256820678710937,
+            "median_time": 1.2863428592681885,
+            "std_dev": 0.12455711313225759
+        },
+        {
+            "name": "Get text statistics for this text: This is a test. It has multiple sentences! How many words?",
+            "success_rate": 100.0,
+            "max_time": 1.1168642044067383,
+            "min_time": 1.011460542678833,
+            "avg_time": 1.0729418754577638,
+            "median_time": 1.094149112701416,
+            "std_dev": 0.0464951614936315
+        },
+        {
+            "name": "Format this text to 40 characters per line: This is a long text that needs to be formatted to fit within a specific line length while maintaining readability.",
+            "success_rate": 100.0,
+            "max_time": 1.322049617767334,
+            "min_time": 1.1342177391052246,
+            "avg_time": 1.2271326541900636,
+            "median_time": 1.232123851776123,
+            "std_dev": 0.08388759729511981
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 1.0539074579874674,
+        "overall_min_time": 0.8539515972137451,
+        "overall_max_time": 1.3256820678710937,
+        "overall_median_time": 1.0143803358078003,
+        "overall_std_dev": 0.19046628514520247
+    }
+}
