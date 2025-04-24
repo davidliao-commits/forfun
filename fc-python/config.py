@@ -1,7 +1,7 @@
 # OpenAI API Configuration
 BASE_URL = "https://api.siliconflow.cn/v1"
-OPENAI_API_KEY = "sk-wosxiisuzqcpwbnmaobpgflmgxzpumvxsuvusoduscvhcdoc"
-MODEL_NAME="THUDM/glm-4-9b-chat"
+OPENAI_API_KEY = "your silicon cloud api key"
+MODEL_NAME="model name for benchmark"
 
 # Benchmark Configuration
 BENCHMARK_ITERATIONS = 5
