@@ -8,8 +8,8 @@ import requests
 from config import OPENAI_API_KEY, BASE_URL, MODEL_NAME
 
 client = OpenAI(
-     base_url=BASE_URL,
-     api_key=OPENAI_API_KEY
+    api_key=OPENAI_API_KEY,
+    base_url=BASE_URL
 )
 print("client started")
 
