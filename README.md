@@ -2,7 +2,8 @@
 
 This project contains a comprehensive benchmark suite for testing function calling capabilities across different modules including math operations, string manipulation, data handling, validation, weather information, and more.
 
-#<font color=red>ONLY FOR PYTHON DIRECTORY: fc-python folder</font>
+# <font color=red>ONLY FOR PYTHON DIRECTORY: fc-python folder</font>
+
 ## Prerequisites
 
 - Python 3.8 or higher
