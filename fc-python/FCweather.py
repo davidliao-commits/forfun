@@ -16,8 +16,8 @@ longtitude=None
     
         # Initialize client with base URL
 client = OpenAI(
-    api_key="sk-wosxiisuzqcpwbnmaobpgflmgxzpumvxsuvusoduscvhcdoc",
-    base_url="https://api.siliconflow.cn/v1"
+    api_key=OPENAI_API_KEY,
+    base_url=BASE_URL
 )
 print("OpenAI client initialized")
 
@@ -161,7 +161,7 @@ def function_call_playground(prompt: str):
     messages = [{"role": "system", "content": prompt}]
 
     response = client.chat.completions.create(
-        model="THUDM/GLM-4-9B-0414",
+        model=MODEL_NAME,
         messages=messages,
         temperature=0.01,
         stream=False,
@@ -199,7 +199,7 @@ def function_call_playground(prompt: str):
     })
 
     final_response = client.chat.completions.create(
-        model="THUDM/GLM-4-9B-0414",
+        model=MODEL_NAME,
         messages=messages,
         temperature=0.01,
         stream=False,

@@ -17,7 +17,8 @@ from benchmark_fcweather import test_cases as weather_test_cases
 # Import function_call_playground from each module
 from FCdefinition import function_call_playground as definition_playground
 from FCstring import function_call_playground as string_playground
-from FCweather import function_call_playground as weather_playground
+from FCweather import function_call_playground as weather_playground, function_call_playground_coords, latitude, longtitude
+from FCmathparallel import function_call_playground as math_parallel_playground
 
 def run_definition_benchmark():
     """Run benchmark for definition functions"""
@@ -192,6 +193,7 @@ def run_weather_benchmark():
     import statistics
     from datetime import datetime
     import os
+    from FCweather import function_call_playground_coords, function_call_playground, latitude, longtitude
     
     # Create benchmark_results directory if it doesn't exist
     os.makedirs(BENCHMARK_RESULTS_DIR, exist_ok=True)
@@ -211,14 +213,25 @@ def run_weather_benchmark():
         for i in range(BENCHMARK_ITERATIONS):
             try:
                 start_time = time.time()
-                response = weather_playground(test_case["prompt"])
-                end_time = time.time()
                 
-                execution_time = end_time - start_time
-                execution_times.append(execution_time)
-                success_count += 1
+                # Step 1: Get coordinates
+                coord_prompt = f"what are the coordinates of {test_case['city']}?"
+                coord_response = function_call_playground_coords(coord_prompt)
                 
-                print(f"Iteration {i+1}/{BENCHMARK_ITERATIONS}: {execution_time:.2f} seconds")
+                # Step 2: Get weather if coordinates were obtained
+                if "Coordinates obtained:" in coord_response:
+                    weather_prompt = f"What is the weather like in coordinates {latitude}, {longtitude} today?"
+                    weather_response = function_call_playground(weather_prompt)
+                    end_time = time.time()
+                    
+                    execution_time = end_time - start_time
+                    execution_times.append(execution_time)
+                    success_count += 1
+                    
+                    print(f"Iteration {i+1}/{BENCHMARK_ITERATIONS}: {execution_time:.2f} seconds")
+                else:
+                    print(f"Iteration {i+1}/{BENCHMARK_ITERATIONS} failed: Could not get coordinates")
+                    
             except Exception as e:
                 print(f"Iteration {i+1}/{BENCHMARK_ITERATIONS} failed: {str(e)}")
         
