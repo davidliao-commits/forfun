@@ -2,17 +2,17 @@ import time
 import statistics
 import json
 from datetime import datetime
-from FCweather import function_call_playground
+from FCweather import function_call_playground_coords, function_call_playground, latitude, longtitude
 
-# Test cases with different coordinates
+# Test cases with different cities
 test_cases = [
-    {"prompt": "What is the weather like in coordinates 47.3769 and 8.5417, today?", "name": "Zurich"},
-    {"prompt": "What is the weather like in coordinates 40.7128 and -74.0060, today?", "name": "New York"},
-    {"prompt": "What is the weather like in coordinates 51.5074 and -0.1278, today?", "name": "London"},
-    {"prompt": "What is the weather like in coordinates 35.6762 and 139.6503, today?", "name": "Tokyo"},
-    {"prompt": "What is the weather like in coordinates -33.8688 and 151.2093, today?", "name": "Sydney"},
-    # Invalid coordinates to test error handling
-    {"prompt": "What is the weather like in coordinates 999 and 999, today?", "name": "Invalid Coordinates"}
+    {"city": "Zurich, Switzerland", "name": "Zurich"},
+    {"city": "New York, USA", "name": "New York"},
+    {"city": "London, UK", "name": "London"},
+    {"city": "Tokyo, Japan", "name": "Tokyo"},
+    {"city": "Sydney, Australia", "name": "Sydney"},
+    # Invalid city to test error handling
+    {"city": "NonExistentCity123", "name": "Invalid City"}
 ]
 
 # Number of iterations for each test case
@@ -35,14 +35,25 @@ for test_case in test_cases:
     for i in range(iterations):
         try:
             start_time = time.time()
-            response = function_call_playground(test_case["prompt"])
-            end_time = time.time()
             
-            execution_time = end_time - start_time
-            execution_times.append(execution_time)
-            success_count += 1
+            # Step 1: Get coordinates
+            coord_prompt = f"what are the coordinates of {test_case['city']}?"
+            coord_response = function_call_playground_coords(coord_prompt)
             
-            print(f"  Iteration {i+1}/{iterations}: {execution_time:.2f} seconds")
+            # Step 2: Get weather if coordinates were obtained
+            if "Coordinates obtained:" in coord_response:
+                weather_prompt = f"What is the weather like in coordinates {latitude}, {longtitude} today?"
+                weather_response = function_call_playground(weather_prompt)
+                end_time = time.time()
+                
+                execution_time = end_time - start_time
+                execution_times.append(execution_time)
+                success_count += 1
+                
+                print(f"  Iteration {i+1}/{iterations}: {execution_time:.2f} seconds")
+            else:
+                print(f"  Iteration {i+1}/{iterations} failed: Could not get coordinates")
+                
         except Exception as e:
             print(f"  Iteration {i+1}/{iterations} failed: {str(e)}")
     
