@@ -4,6 +4,7 @@ import statistics
 from datetime import datetime
 import sys
 import os
+from config import BENCHMARK_ITERATIONS
 
 # Import the function_call_playground directly since we're in the same directory
 from FCdefinition import function_call_playground
@@ -36,8 +37,6 @@ test_cases = {
     }
 }
 
-iterations = 5
-
 results = {
     "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "test_cases": [],
@@ -50,7 +49,7 @@ for test_case in test_cases:
     execution_times = []
     success_count = 0
     
-    for i in range(iterations):
+    for i in range(BENCHMARK_ITERATIONS):
         try:
             start_time = time.time()
             response = function_call_playground(test_case)
@@ -60,15 +59,15 @@ for test_case in test_cases:
             execution_times.append(execution_time)
             success_count += 1
             
-            print(f"Iteration {i+1}/{iterations}: {execution_time:.2f} seconds")
+            print(f"Iteration {i+1}/{BENCHMARK_ITERATIONS}: {execution_time:.2f} seconds")
         except Exception as e:
-            print(f"Iteration {i+1}/{iterations} failed: {str(e)}")
+            print(f"Iteration {i+1}/{BENCHMARK_ITERATIONS} failed: {str(e)}")
     
     # Calculate statistics for this test case
     if execution_times:
         test_result = {
             "name": test_case,
-            "success_rate": success_count / iterations * 100,
+            "success_rate": success_count / BENCHMARK_ITERATIONS * 100,
             "max_time": max(execution_times),
             "min_time": min(execution_times),
             "avg_time": statistics.mean(execution_times),
