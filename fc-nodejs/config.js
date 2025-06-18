@@ -1,7 +1,7 @@
 // OpenAI API Configuration
-export const BASE_URL = "https://api.siliconflow.cn/v1";
-export const OPENAI_API_KEY = "sk-wosxiisuzqcpwbnmaobpgflmgxzpumvxsuvusoduscvhcdoc";
-export const MODEL_NAME = "THUDM/GLM-4-9B-0414";
+export const BASE_URL = "your ai api url";
+export const OPENAI_API_KEY = "your openai api key";
+export const MODEL_NAME = "your model name";
 export const URBAN_DICTIONARY_API_KEY= "your urban dictionary api key";
 export const OPENWEATHERMAP_API_KEY= "your openweathermap api key";
 
