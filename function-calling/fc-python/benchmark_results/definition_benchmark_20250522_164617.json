@@ -1,0 +1,75 @@
+{
+    "timestamp": "2025-05-22 16:45:59",
+    "test_cases": [
+        {
+            "name": "what is the definition of the word 'good'",
+            "success_rate": 100.0,
+            "max_time": 2.130641222000122,
+            "min_time": 2.130641222000122,
+            "avg_time": 2.130641222000122,
+            "median_time": 2.130641222000122,
+            "std_dev": 0
+        },
+        {
+            "name": "what is the definition of the word 'bad'",
+            "success_rate": 100.0,
+            "max_time": 2.804832935333252,
+            "min_time": 2.804832935333252,
+            "avg_time": 2.804832935333252,
+            "median_time": 2.804832935333252,
+            "std_dev": 0
+        },
+        {
+            "name": "what is the definition of the word 'eviscerate'",
+            "success_rate": 100.0,
+            "max_time": 2.7529525756835938,
+            "min_time": 2.7529525756835938,
+            "avg_time": 2.7529525756835938,
+            "median_time": 2.7529525756835938,
+            "std_dev": 0
+        },
+        {
+            "name": "what is the definition of the word 'hashtable'",
+            "success_rate": 0,
+            "max_time": null,
+            "min_time": null,
+            "avg_time": null,
+            "median_time": null,
+            "std_dev": null
+        },
+        {
+            "name": "what is the definition of the word 'yeet'",
+            "success_rate": 100.0,
+            "max_time": 2.1990487575531006,
+            "min_time": 2.1990487575531006,
+            "avg_time": 2.1990487575531006,
+            "median_time": 2.1990487575531006,
+            "std_dev": 0
+        },
+        {
+            "name": "what is the definition of the word 'bet'",
+            "success_rate": 100.0,
+            "max_time": 2.213827610015869,
+            "min_time": 2.213827610015869,
+            "avg_time": 2.213827610015869,
+            "median_time": 2.213827610015869,
+            "std_dev": 0
+        },
+        {
+            "name": "what is the definition of the word 'asshole'",
+            "success_rate": 100.0,
+            "max_time": 4.358933925628662,
+            "min_time": 4.358933925628662,
+            "avg_time": 4.358933925628662,
+            "median_time": 4.358933925628662,
+            "std_dev": 0
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 2.743372837702433,
+        "overall_min_time": 2.130641222000122,
+        "overall_max_time": 4.358933925628662,
+        "overall_median_time": 2.4833900928497314,
+        "overall_std_dev": 0.8445180435111087
+    }
+}

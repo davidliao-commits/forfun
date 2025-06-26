@@ -1,0 +1,17 @@
+{
+  "name": "fc-nodejs",
+  "version": "1.0.0",
+  "description": "Function calling examples in Node.js",
+  "main": "FCweather.js",
+  "type": "module",
+  "scripts": {
+    "start": "node FCweather.js"
+  },
+  "dependencies": {
+    "csv": "^6.3.11",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.3.1",
+    "mathjs": "^14.4.0",
+    "openai": "^4.28.0"
+  }
+}

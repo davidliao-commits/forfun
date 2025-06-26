@@ -1,0 +1,112 @@
+{
+    "timestamp": "2025-05-22 16:48:05",
+    "test_cases": [
+        {
+            "name": "csv_to_json",
+            "prompt": "Convert this CSV data to JSON: name,age,city\nJohn,30,New York\nJane,25,Los Angeles",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 15.6679527759552,
+                    "response": "Error in function_call_playground: Connection error.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 15.6679527759552,
+                "min_time": 15.6679527759552,
+                "max_time": 15.6679527759552,
+                "median_time": 15.6679527759552,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "json_to_csv",
+            "prompt": "Convert this JSON to CSV: [{\"name\":\"John\",\"age\":30,\"city\":\"New York\"},{\"name\":\"Jane\",\"age\":25,\"city\":\"Los Angeles\"}]",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 16.442276000976562,
+                    "response": "Error in function_call_playground: Connection error.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 16.442276000976562,
+                "min_time": 16.442276000976562,
+                "max_time": 16.442276000976562,
+                "median_time": 16.442276000976562,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "filter_data",
+            "prompt": "Filter this data to show only people over 25: [{\"name\":\"John\",\"age\":30},{\"name\":\"Jane\",\"age\":25},{\"name\":\"Bob\",\"age\":35}]",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 15.618215084075928,
+                    "response": "Error in function_call_playground: Connection error.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 15.618215084075928,
+                "min_time": 15.618215084075928,
+                "max_time": 15.618215084075928,
+                "median_time": 15.618215084075928,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "sort_data",
+            "prompt": "Sort this data by age in descending order: [{\"name\":\"John\",\"age\":30},{\"name\":\"Jane\",\"age\":25},{\"name\":\"Bob\",\"age\":35}]",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 16.288825511932373,
+                    "response": "Error in function_call_playground: Connection error.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 16.288825511932373,
+                "min_time": 16.288825511932373,
+                "max_time": 16.288825511932373,
+                "median_time": 16.288825511932373,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "aggregate_data",
+            "prompt": "Calculate the average age from this data: [{\"name\":\"John\",\"age\":30},{\"name\":\"Jane\",\"age\":25},{\"name\":\"Bob\",\"age\":35}]",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 15.376307964324951,
+                    "response": "Error in function_call_playground: Connection error.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 15.376307964324951,
+                "min_time": 15.376307964324951,
+                "max_time": 15.376307964324951,
+                "median_time": 15.376307964324951,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 15.878715467453002,
+        "overall_min_time": 15.376307964324951,
+        "overall_max_time": 16.442276000976562,
+        "overall_median_time": 15.6679527759552,
+        "overall_std_dev": 0.4611088224580491
+    }
+}

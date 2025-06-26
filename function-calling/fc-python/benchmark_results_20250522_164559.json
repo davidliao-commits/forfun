@@ -1,0 +1,66 @@
+{
+    "timestamp": "2025-05-22 16:45:33",
+    "test_cases": [
+        {
+            "name": "Zurich",
+            "success_rate": 100.0,
+            "min_time": 4.220555067062378,
+            "max_time": 4.220555067062378,
+            "avg_time": 4.220555067062378,
+            "median_time": 4.220555067062378,
+            "std_dev": 0
+        },
+        {
+            "name": "New York",
+            "success_rate": 100.0,
+            "min_time": 4.8704822063446045,
+            "max_time": 4.8704822063446045,
+            "avg_time": 4.8704822063446045,
+            "median_time": 4.8704822063446045,
+            "std_dev": 0
+        },
+        {
+            "name": "London",
+            "success_rate": 100.0,
+            "min_time": 5.940545082092285,
+            "max_time": 5.940545082092285,
+            "avg_time": 5.940545082092285,
+            "median_time": 5.940545082092285,
+            "std_dev": 0
+        },
+        {
+            "name": "Tokyo",
+            "success_rate": 100.0,
+            "min_time": 5.159348011016846,
+            "max_time": 5.159348011016846,
+            "avg_time": 5.159348011016846,
+            "median_time": 5.159348011016846,
+            "std_dev": 0
+        },
+        {
+            "name": "Sydney",
+            "success_rate": 100.0,
+            "min_time": 5.0104734897613525,
+            "max_time": 5.0104734897613525,
+            "avg_time": 5.0104734897613525,
+            "median_time": 5.0104734897613525,
+            "std_dev": 0
+        },
+        {
+            "name": "Invalid City",
+            "success_rate": 0,
+            "min_time": null,
+            "max_time": null,
+            "avg_time": null,
+            "median_time": null,
+            "std_dev": null
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 5.040280771255493,
+        "overall_min_time": 4.220555067062378,
+        "overall_max_time": 5.940545082092285,
+        "overall_median_time": 5.0104734897613525,
+        "overall_std_dev": 0.6177222461878799
+    }
+}

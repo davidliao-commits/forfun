@@ -1,0 +1,27 @@
+[
+  {
+    "prompt": "Convert this CSV data to JSON: name,age,city\nJohn,30,New York\nJane,25,Los Angeles",
+    "timeTaken": 2.095,
+    "result": "[\n  {\n    \"name\": \"John\",\n    \"age\": \"30\",\n    \"city\": \"New York\"\n  },\n  {\n    \"name\": \"Jane\",\n    \"age\": \"25\",\n    \"city\": \"Los Angeles\"\n  }\n]"
+  },
+  {
+    "prompt": "Convert this JSON to CSV: [{\"name\":\"John\",\"age\":30,\"city\":\"New York\"},{\"name\":\"Jane\",\"age\":25,\"city\":\"Los Angeles\"}]",
+    "timeTaken": 1.087,
+    "result": "name,age,city\nJohn,30,New York\nJane,25,Los Angeles\n"
+  },
+  {
+    "prompt": "Filter this data to show only people over 25: [{\"name\":\"John\",\"age\":30},{\"name\":\"Jane\",\"age\":25},{\"name\":\"Bob\",\"age\":35}]",
+    "timeTaken": 1.172,
+    "result": "Error filtering data: Unexpected token 'o', \"[object Obj\"... is not valid JSON"
+  },
+  {
+    "prompt": "Sort this data by age in descending order: [{\"name\":\"John\",\"age\":30},{\"name\":\"Jane\",\"age\":25},{\"name\":\"Bob\",\"age\":35}]",
+    "timeTaken": 1.185,
+    "result": "Error sorting data: Unexpected token 'o', \"[object Obj\"... is not valid JSON"
+  },
+  {
+    "prompt": "Calculate the average age from this data: [{\"name\":\"John\",\"age\":30},{\"name\":\"Jane\",\"age\":25},{\"name\":\"Bob\",\"age\":35}]",
+    "timeTaken": 1.046,
+    "result": "{\n  \"operation\": \"average\",\n  \"field\": \"age\",\n  \"result\": 30\n}"
+  }
+]

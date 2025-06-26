@@ -1,0 +1,66 @@
+{
+    "timestamp": "2025-05-22 16:22:33",
+    "test_cases": [
+        {
+            "name": "Zurich",
+            "success_rate": 100.0,
+            "min_time": 4.16174578666687,
+            "max_time": 5.114238977432251,
+            "avg_time": 4.704681158065796,
+            "median_time": 4.725305557250977,
+            "std_dev": 0.34537661030506345
+        },
+        {
+            "name": "New York",
+            "success_rate": 100.0,
+            "min_time": 4.126699447631836,
+            "max_time": 5.861795902252197,
+            "avg_time": 5.071699142456055,
+            "median_time": 5.038486003875732,
+            "std_dev": 0.6551430204268922
+        },
+        {
+            "name": "London",
+            "success_rate": 100.0,
+            "min_time": 4.763247489929199,
+            "max_time": 5.486390590667725,
+            "avg_time": 5.103274297714234,
+            "median_time": 5.0708839893341064,
+            "std_dev": 0.26016243454004273
+        },
+        {
+            "name": "Tokyo",
+            "success_rate": 100.0,
+            "min_time": 3.945608615875244,
+            "max_time": 5.133780002593994,
+            "avg_time": 4.69942078590393,
+            "median_time": 4.780659198760986,
+            "std_dev": 0.4468927170527364
+        },
+        {
+            "name": "Sydney",
+            "success_rate": 100.0,
+            "min_time": 4.272238492965698,
+            "max_time": 5.304603815078735,
+            "avg_time": 4.976740074157715,
+            "median_time": 5.02871036529541,
+            "std_dev": 0.41696764900675715
+        },
+        {
+            "name": "Invalid City",
+            "success_rate": 0,
+            "min_time": null,
+            "max_time": null,
+            "avg_time": null,
+            "median_time": null,
+            "std_dev": null
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 4.911163091659546,
+        "overall_min_time": 4.69942078590393,
+        "overall_max_time": 5.103274297714234,
+        "overall_median_time": 4.976740074157715,
+        "overall_std_dev": 0.19649966455315482
+    }
+}

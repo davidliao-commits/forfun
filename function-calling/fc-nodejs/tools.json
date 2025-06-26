@@ -1,0 +1,114 @@
+{
+  "tools": [
+    {
+      "id": "math_calculation",
+      "name": "Mathematical Calculation",
+      "description": "Performs various mathematical calculations including arithmetic, percentages, and square roots",
+      "prompt_template": "Calculate {operation} for {input}",
+      "parameters": {
+        "operation": {
+          "type": "string",
+          "enum": ["square root", "percentage", "addition", "subtraction", "multiplication", "division"]
+        },
+        "input": {
+          "type": "string",
+          "description": "The input value(s) for the calculation"
+        }
+      },
+      "example": {
+        "operation": "square root",
+        "input": "144"
+      }
+    },
+    {
+      "id": "weather_info",
+      "name": "Weather Information",
+      "description": "Retrieves current weather information for a specified location",
+      "prompt_template": "What's the weather like in {location}?",
+      "parameters": {
+        "location": {
+          "type": "string",
+          "description": "The city or location to get weather for"
+        }
+      },
+      "example": {
+        "location": "Tokyo"
+      }
+    },
+    {
+      "id": "string_operation",
+      "name": "String Operations",
+      "description": "Performs various string operations like reversal and vowel counting",
+      "prompt_template": "{operation} the string '{input}'",
+      "parameters": {
+        "operation": {
+          "type": "string",
+          "enum": ["reverse", "count vowels", "count words", "to uppercase", "to lowercase"]
+        },
+        "input": {
+          "type": "string",
+          "description": "The input string to process"
+        }
+      },
+      "example": {
+        "operation": "reverse",
+        "input": "hello"
+      }
+    },
+    {
+      "id": "data_lookup",
+      "name": "Data Lookup",
+      "description": "Retrieves factual information about various topics",
+      "prompt_template": "What is the {data_type} of {subject}?",
+      "parameters": {
+        "data_type": {
+          "type": "string",
+          "enum": ["population", "GDP", "area", "capital", "currency"]
+        },
+        "subject": {
+          "type": "string",
+          "description": "The subject to look up information for"
+        }
+      },
+      "example": {
+        "data_type": "population",
+        "subject": "New York City"
+      }
+    },
+    {
+      "id": "validation_check",
+      "name": "Validation Check",
+      "description": "Validates various types of data like numbers, email addresses, and dates",
+      "prompt_template": "Is {input} a valid {validation_type}?",
+      "parameters": {
+        "validation_type": {
+          "type": "string",
+          "enum": ["prime number", "email address", "date", "phone number", "URL"]
+        },
+        "input": {
+          "type": "string",
+          "description": "The input to validate"
+        }
+      },
+      "example": {
+        "validation_type": "prime number",
+        "input": "42"
+      }
+    },
+    {
+      "id": "definition_lookup",
+      "name": "Definition Lookup",
+      "description": "Provides definitions for various terms and concepts",
+      "prompt_template": "What is the definition of {term}?",
+      "parameters": {
+        "term": {
+          "type": "string",
+          "description": "The term to define"
+        }
+      },
+      "example": {
+        "term": "function"
+      }
+    }
+  ]
+} 

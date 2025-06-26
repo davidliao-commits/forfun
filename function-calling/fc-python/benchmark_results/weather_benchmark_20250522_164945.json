@@ -1,0 +1,66 @@
+{
+    "timestamp": "2025-05-22 16:49:31",
+    "test_cases": [
+        {
+            "name": "Zurich",
+            "success_rate": 100.0,
+            "min_time": 2.693464517593384,
+            "max_time": 2.693464517593384,
+            "avg_time": 2.693464517593384,
+            "median_time": 2.693464517593384,
+            "std_dev": 0
+        },
+        {
+            "name": "New York",
+            "success_rate": 100.0,
+            "min_time": 2.591447353363037,
+            "max_time": 2.591447353363037,
+            "avg_time": 2.591447353363037,
+            "median_time": 2.591447353363037,
+            "std_dev": 0
+        },
+        {
+            "name": "London",
+            "success_rate": 100.0,
+            "min_time": 2.4827687740325928,
+            "max_time": 2.4827687740325928,
+            "avg_time": 2.4827687740325928,
+            "median_time": 2.4827687740325928,
+            "std_dev": 0
+        },
+        {
+            "name": "Tokyo",
+            "success_rate": 100.0,
+            "min_time": 2.5576963424682617,
+            "max_time": 2.5576963424682617,
+            "avg_time": 2.5576963424682617,
+            "median_time": 2.5576963424682617,
+            "std_dev": 0
+        },
+        {
+            "name": "Sydney",
+            "success_rate": 100.0,
+            "min_time": 2.6179146766662598,
+            "max_time": 2.6179146766662598,
+            "avg_time": 2.6179146766662598,
+            "median_time": 2.6179146766662598,
+            "std_dev": 0
+        },
+        {
+            "name": "Invalid City",
+            "success_rate": 0,
+            "min_time": null,
+            "max_time": null,
+            "avg_time": null,
+            "median_time": null,
+            "std_dev": null
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 2.588658332824707,
+        "overall_min_time": 2.4827687740325928,
+        "overall_max_time": 2.693464517593384,
+        "overall_median_time": 2.591447353363037,
+        "overall_std_dev": 0.07749079326656431
+    }
+}
