@@ -3,7 +3,6 @@ import json
 import sympy
 import math
 import openai
-
 from config import OPENAI_API_KEY, BASE_URL, MODEL_NAME
 client=openai.OpenAI(
     base_url=BASE_URL,
@@ -108,10 +107,13 @@ def function_call_playground(prompt: str, client):
 
 if __name__ == "__main__":
     try:
+        prompt = "What is 10 + 10, then times the result by 10?"
         # Test the function with a simple math problem
-        prompt = "What is 2 + 3 and then multiply the result by 4?"
-        print("Sending prompt:", prompt)
+        import time
+        start_time = time.time()
         result = function_call_playground(prompt, client)
         print("Result:", result)
+        end_time = time.time()
+        print(f"Execution time: {end_time-start_time} seconds")
     except Exception as e:
         print("Error in main execution:", str(e))

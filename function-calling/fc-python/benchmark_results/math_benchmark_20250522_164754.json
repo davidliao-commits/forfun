@@ -1,0 +1,152 @@
+{
+    "timestamp": "2025-05-22 16:46:17",
+    "test_cases": [
+        {
+            "name": "basic_arithmetic",
+            "prompt": "What is 5 plus 3?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 12.286409854888916,
+                    "response": "The result is: 8",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 12.286409854888916,
+                "min_time": 12.286409854888916,
+                "max_time": 12.286409854888916,
+                "median_time": 12.286409854888916,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "subtraction",
+            "prompt": "Calculate 10 minus 4",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 8.111427068710327,
+                    "response": "The result is: 6",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 8.111427068710327,
+                "min_time": 8.111427068710327,
+                "max_time": 8.111427068710327,
+                "median_time": 8.111427068710327,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "multiplication",
+            "prompt": "Multiply 6 by 7",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 4.413268089294434,
+                    "response": "The result is: 42",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 4.413268089294434,
+                "min_time": 4.413268089294434,
+                "max_time": 4.413268089294434,
+                "median_time": 4.413268089294434,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "division",
+            "prompt": "Divide 15 by 3",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 7.73898983001709,
+                    "response": "The result is: 5.0",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 7.73898983001709,
+                "min_time": 7.73898983001709,
+                "max_time": 7.73898983001709,
+                "median_time": 7.73898983001709,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "derivative",
+            "prompt": "Find the derivative of x^2",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 14.307894468307495,
+                    "response": "The result is: 2*x",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 14.307894468307495,
+                "min_time": 14.307894468307495,
+                "max_time": 14.307894468307495,
+                "median_time": 14.307894468307495,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "integration",
+            "prompt": "Integrate 2x with respect to x",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 18.750483751296997,
+                    "response": "The result is: Error: Sympify of expression 'could not parse '2x'' failed, because of exception being raised:\nSyntaxError: invalid syntax (<string>, line 1)",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 18.750483751296997,
+                "min_time": 18.750483751296997,
+                "max_time": 18.750483751296997,
+                "median_time": 18.750483751296997,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "equation_solving",
+            "prompt": "Solve the equation x + 5 = 10",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 31.38379454612732,
+                    "response": "The result is: 5",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 31.38379454612732,
+                "min_time": 31.38379454612732,
+                "max_time": 31.38379454612732,
+                "median_time": 31.38379454612732,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 13.856038229806083,
+        "overall_min_time": 4.413268089294434,
+        "overall_max_time": 31.38379454612732,
+        "overall_median_time": 12.286409854888916,
+        "overall_std_dev": 9.068539869487301
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "timestamp": "2025-05-22 16:47:54",
+    "test_cases": [
+        {
+            "name": "email_validation",
+            "prompt": "Is test@example.com a valid email address?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 1.154442310333252,
+                    "response": "\nYes, test@example.com is a valid email address.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 1.154442310333252,
+                "min_time": 1.154442310333252,
+                "max_time": 1.154442310333252,
+                "median_time": 1.154442310333252,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "phone_validation",
+            "prompt": "Is +1-555-123-4567 a valid phone number?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 1.3434600830078125,
+                    "response": "\nYes, +1-555-123-4567 is a valid phone number.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 1.3434600830078125,
+                "min_time": 1.3434600830078125,
+                "max_time": 1.3434600830078125,
+                "median_time": 1.3434600830078125,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "url_validation",
+            "prompt": "Is https://www.example.com a valid URL?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": null,
+                    "error": "'NoneType' object is not subscriptable",
+                    "success": false
+                }
+            ],
+            "summary": {
+                "success_rate": 0
+            }
+        },
+        {
+            "name": "password_validation",
+            "prompt": "Is 'Password123!' a strong password?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 1.6895530223846436,
+                    "response": "\nYes, 'Password123!' is a strong password. It meets the criteria for a strong password as it is long, contains uppercase and lowercase letters, includes digits, and has a special character.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 1.6895530223846436,
+                "min_time": 1.6895530223846436,
+                "max_time": 1.6895530223846436,
+                "median_time": 1.6895530223846436,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "date_validation",
+            "prompt": "Is 2024-02-29 a valid date?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 1.378666639328003,
+                    "response": "\nYes, 2024-02-29 is a valid date.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 1.378666639328003,
+                "min_time": 1.378666639328003,
+                "max_time": 1.378666639328003,
+                "median_time": 1.378666639328003,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "ip_validation",
+            "prompt": "Is 192.168.1.1 a valid IP address?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": 1.4103360176086426,
+                    "response": "\nYes, 192.168.1.1 is a valid IP address. It is an IPv4 address.",
+                    "success": true
+                }
+            ],
+            "summary": {
+                "avg_time": 1.4103360176086426,
+                "min_time": 1.4103360176086426,
+                "max_time": 1.4103360176086426,
+                "median_time": 1.4103360176086426,
+                "std_dev": 0,
+                "success_rate": 1.0
+            }
+        },
+        {
+            "name": "credit_card_validation",
+            "prompt": "Is 4532015112830366 a valid credit card number?",
+            "iterations": [
+                {
+                    "iteration": 1,
+                    "execution_time": null,
+                    "error": "'NoneType' object is not subscriptable",
+                    "success": false
+                }
+            ],
+            "summary": {
+                "success_rate": 0
+            }
+        }
+    ],
+    "summary": {
+        "overall_avg_time": 1.3952916145324707,
+        "overall_min_time": 1.154442310333252,
+        "overall_max_time": 1.6895530223846436,
+        "overall_median_time": 1.378666639328003,
+        "overall_std_dev": 0.19221563087392876
+    }
+}
