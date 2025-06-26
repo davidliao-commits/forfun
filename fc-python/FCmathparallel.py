@@ -4,9 +4,10 @@ import sympy
 import math
 import openai
 
+from config import OPENAI_API_KEY, BASE_URL, MODEL_NAME
 client=openai.OpenAI(
-    base_url="https://api.siliconflow.cn/v1",
-    api_key="sk-wosxiisuzqcpwbnmaobpgflmgxzpumvxsuvusoduscvhcdoc"
+    base_url=BASE_URL,
+    api_key=OPENAI_API_KEY
 )
 # Define all your math functions
 def add(a: float, b: float):
@@ -68,7 +69,7 @@ def function_call_playground(prompt: str, client):
         ]
 
         response = client.chat.completions.create(
-            model="Qwen/Qwen3-8B",
+            model=MODEL_NAME,
             messages=messages,
             temperature=0.01,
             stream=False,

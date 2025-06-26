@@ -5,9 +5,11 @@ import requests
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from config import OPENAI_API_KEY, BASE_URL, MODEL_NAME
+
 client = OpenAI(
-    base_url="https://api.siliconflow.cn/v1",
-    api_key="sk-wosxiisuzqcpwbnmaobpgflmgxzpumvxsuvusoduscvhcdoc"
+    base_url=BASE_URL,
+    api_key=OPENAI_API_KEY
 )
 
 def send_email(to: str, subject:str, body:str):
@@ -65,7 +67,7 @@ def function_call_playground(prompt:str):
 
 
     response=client.chat.completions.create(
-         model="THUDM/glm-4-9b-chat",
+        model=MODEL_NAME,
         messages=messages,
         temperature=0.01,
         stream=False,
@@ -85,7 +87,7 @@ def function_call_playground(prompt:str):
     })
 
     response=client.chat.completions.create(
-        model="THUDM/glm-4-9b-chat",
+        model=MODEL_NAME,
         messages=messages,
         temperature=0.01,
         stream=False,
